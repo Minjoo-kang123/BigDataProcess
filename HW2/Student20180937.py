@@ -63,14 +63,14 @@ for row in ws:
         if ws.cell(row = row_id, column=7).value >= grades[0]:
             ws.cell(row = row_id, column=8).value = 'A+'
         elif ws.cell(row = row_id, column=7).value >= grades[1]:
-            ws.cell(row = row_id, column=8).value = 'A'
+            ws.cell(row = row_id, column=8).value = 'A0'
         elif ws.cell(row = row_id, column=7).value >= grades[2]:
             ws.cell(row = row_id, column=8).value = 'B+'
         elif ws.cell(row = row_id, column=7).value >= grades[3]:
-            ws.cell(row = row_id, column=8).value = 'B'
+            ws.cell(row = row_id, column=8).value = 'B0'
         elif ws.cell(row = row_id, column=7).value >= grades[4]:
             ws.cell(row = row_id, column=8).value = 'C+'
         else:
-             ws.cell(row = row_id, column=8).value = 'C'
+             ws.cell(row = row_id, column=8).value = 'C0'
     row_id += 1         
 wb.save("student.xlsx")             
