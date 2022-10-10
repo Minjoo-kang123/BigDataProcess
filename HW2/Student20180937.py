@@ -1,5 +1,6 @@
 import openpyxl
 
+##각등급의 커트라인
 def grade_score(scores):
   scores = sorted(scores, reverse=True)
   gs = [0.3, 0.7, 1]
@@ -24,6 +25,7 @@ def grade_score(scores):
       grades.append(101)
   return(grades)  
   
+  ##plus 커트라인 구하기위한 함수
 def grade_pscore(gr , scores):
   tmp = len(gr) - 1
   g_len = ((gr[tmp] - gr[tmp - 1]) // 2) + gr[tmp - 1]
